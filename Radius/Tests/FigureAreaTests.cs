@@ -9,9 +9,8 @@ public class FigureAreaTests
     [Test]
     public void CalculateCircleArea()
     {
-        var circle = new Circle(5);
-        var expectedArea = Math.PI * 25;
-        Assert.AreEqual(Math.PI * 25, circle.CalculateArea(), 0.001, $"Invalid circle area. Expected: {expectedArea}, Actual: {circle.CalculateArea()}");
+        var circle = new Circle(7);
+        Assert.AreEqual(Math.PI * 49, circle.CalculateArea(), 0.001);
     }
 
     [Test]
